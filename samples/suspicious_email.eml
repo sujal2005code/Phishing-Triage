@@ -1,0 +1,54 @@
+From: "Account Security" <security@suspicious-domain.tk>
+To: victim@company.com
+Subject: Urgent: Your Account Has Been Suspended
+Date: Mon, 28 Sep 2026 10:30:00 -0400
+Message-ID: <abc123@suspicious-domain.tk>
+MIME-Version: 1.0
+Return-Path: <bounce@different-domain.xyz>
+Reply-To: reply@another-domain.ml
+Authentication-Results: mx.company.com;
+    spf=fail (sender IP is 192.168.1.100) smtp.mailfrom=suspicious-domain.tk;
+    dkim=fail (signature verification failed);
+    dmarc=fail (p=reject) header.from=suspicious-domain.tk
+Received: from mail.suspicious-domain.tk (192.168.1.100)
+    by mx.company.com with SMTP; Mon, 28 Sep 2026 10:30:05 -0400
+Content-Type: multipart/mixed; boundary="boundary123"
+
+--boundary123
+Content-Type: text/plain; charset="utf-8"
+
+Dear Customer,
+
+Your account has been suspended due to suspicious activity. Please click the link below to verify your identity and restore access immediately:
+
+https://secure-login.paypal.com.suspicious-site.tk/verify?token=abc123&user=victim
+
+If you do not verify within 24 hours, your account will be permanently deleted.
+
+Click here: http://192.168.1.100/login/paypal
+
+Best Regards,
+PayPal Security Team
+
+--boundary123
+Content-Type: text/html; charset="utf-8"
+
+<html>
+<body>
+<p>Dear Customer,</p>
+<p>Your account has been <b>suspended</b> due to suspicious activity.</p>
+<p>Please <a href="https://secure-login.paypal.com.suspicious-site.tk/verify?token=abc123&user=victim">click here to verify your identity</a>.</p>
+<p>If you do not verify within 24 hours, your account will be permanently deleted.</p>
+<p><a href="http://192.168.1.100/login/paypal">Verify Now</a></p>
+</body>
+</html>
+
+--boundary123
+Content-Type: application/pdf; name="account_notice.pdf"
+Content-Disposition: attachment; filename="account_notice.pdf"
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjQKMSAwIG9iago8PCAvVHlwZSAvQ2F0YWxvZyAvUGFnZXMgMiAwIFIgPj4KZW5k
+b2JqCg==
+
+--boundary123--

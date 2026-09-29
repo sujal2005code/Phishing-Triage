@@ -1,0 +1,30 @@
+# Core
+streamlit>=1.28.0
+python-dotenv>=1.0.0
+
+# Data / ML
+scikit-learn>=1.3.0
+pandas>=2.0.0
+numpy>=1.24.0
+joblib>=1.3.0
+xgboost>=2.0.0
+
+# HTTP / Networking
+requests>=2.31.0
+httpx>=0.25.0
+
+# Email parsing (stdlib, but listed for clarity)
+# email — built-in
+
+# Database
+# sqlite3 — built-in
+
+# Report generation
+jinja2>=3.1.0
+markdown>=3.5.0
+
+# Testing
+pytest>=7.4.0
+
+# Utilities
+hashlib-additional>=1.0.1;python_version<"3.11"

@@ -1,0 +1,41 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# ML / generated files
+*.joblib
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Reports / local output
+reports/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Large datasets and local email collections
+data/raw/
+data/processed/
+Sample/
+
+# Generated ML models
+models/*.joblib
+models/*.pkl
+
+# Generated video files
+brag-output/

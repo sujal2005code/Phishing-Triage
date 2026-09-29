@@ -1,0 +1,173 @@
+{
+  "best_model": "xgboost",
+  "best_f1": 0.8916919124935431,
+  "models": {
+    "logistic_regression": {
+      "precision": 0.8867,
+      "recall": 0.7472,
+      "f1_score": 0.811,
+      "roc_auc": 0.8939,
+      "confusion_matrix": [
+        [
+          78134,
+          7272
+        ],
+        [
+          19267,
+          56935
+        ]
+      ],
+      "classification_report": {
+        "legitimate": {
+          "precision": 0.8021888892311168,
+          "recall": 0.9148537573472589,
+          "f1-score": 0.8548250340523065,
+          "support": 85406.0
+        },
+        "phishing": {
+          "precision": 0.886741321039762,
+          "recall": 0.7471588672213327,
+          "f1-score": 0.8109878996360632,
+          "support": 76202.0
+        },
+        "accuracy": 0.8357816444730459,
+        "macro avg": {
+          "precision": 0.8444651051354394,
+          "recall": 0.8310063122842959,
+          "f1-score": 0.8329064668441848,
+          "support": 161608.0
+        },
+        "weighted avg": {
+          "precision": 0.8420573636177956,
+          "recall": 0.8357816444730459,
+          "f1-score": 0.8341547868072038,
+          "support": 161608.0
+        }
+      }
+    },
+    "random_forest": {
+      "precision": 0.9631,
+      "recall": 0.8247,
+      "f1_score": 0.8885,
+      "roc_auc": 0.955,
+      "confusion_matrix": [
+        [
+          83000,
+          2406
+        ],
+        [
+          13361,
+          62841
+        ]
+      ],
+      "classification_report": {
+        "legitimate": {
+          "precision": 0.8613443197974284,
+          "recall": 0.9718286771421212,
+          "f1-score": 0.913257081868546,
+          "support": 85406.0
+        },
+        "phishing": {
+          "precision": 0.9631247413674192,
+          "recall": 0.8246633946615575,
+          "f1-score": 0.8885322625115766,
+          "support": 76202.0
+        },
+        "accuracy": 0.9024367605564081,
+        "macro avg": {
+          "precision": 0.9122345305824238,
+          "recall": 0.8982460359018394,
+          "f1-score": 0.9008946721900613,
+          "support": 161608.0
+        },
+        "weighted avg": {
+          "precision": 0.9093361994350481,
+          "recall": 0.9024367605564081,
+          "f1-score": 0.9015987438862691,
+          "support": 161608.0
+        }
+      }
+    },
+    "xgboost": {
+      "precision": 0.9525,
+      "recall": 0.8382,
+      "f1_score": 0.8917,
+      "roc_auc": 0.9576,
+      "confusion_matrix": [
+        [
+          82221,
+          3185
+        ],
+        [
+          12331,
+          63871
+        ]
+      ],
+      "classification_report": {
+        "legitimate": {
+          "precision": 0.8695849902699044,
+          "recall": 0.9627075381120764,
+          "f1-score": 0.9137798819724603,
+          "support": 85406.0
+        },
+        "phishing": {
+          "precision": 0.9525023860653782,
+          "recall": 0.8381801002598357,
+          "f1-score": 0.8916919124935431,
+          "support": 76202.0
+        },
+        "accuracy": 0.9039899014900252,
+        "macro avg": {
+          "precision": 0.9110436881676414,
+          "recall": 0.9004438191859561,
+          "f1-score": 0.9027358972330017,
+          "support": 161608.0
+        },
+        "weighted avg": {
+          "precision": 0.9086825064473628,
+          "recall": 0.9039899014900252,
+          "f1-score": 0.9033648811666062,
+          "support": 161608.0
+        }
+      }
+    }
+  },
+  "feature_names": [
+    "digit_ratio",
+    "domain_entropy",
+    "domain_length",
+    "has_account_keyword",
+    "has_at_symbol",
+    "has_bank_keyword",
+    "has_double_slash_redirect",
+    "has_executable_ext",
+    "has_https",
+    "has_ip_address",
+    "has_login_keyword",
+    "has_port",
+    "has_suspicious_tld",
+    "has_update_keyword",
+    "is_shortened",
+    "letter_ratio",
+    "num_ampersands",
+    "num_at_symbols",
+    "num_digits_in_domain",
+    "num_dots",
+    "num_equals",
+    "num_hyphens",
+    "num_question_marks",
+    "num_slashes",
+    "num_special_chars",
+    "num_subdomains",
+    "num_underscores",
+    "path_depth",
+    "path_length",
+    "query_length",
+    "subdomain_length",
+    "url_entropy",
+    "url_length"
+  ],
+  "dataset_size": 808039,
+  "train_size": 646431,
+  "test_size": 161608
+}

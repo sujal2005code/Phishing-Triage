@@ -1,0 +1,26 @@
+From: "Newsletter" <updates@legitimate-company.com>
+To: user@company.com
+Subject: Weekly Product Updates - September 28, 2026
+Date: Mon, 28 Sep 2026 09:00:00 -0400
+Message-ID: <newsletter-20260928@legitimate-company.com>
+MIME-Version: 1.0
+Return-Path: <updates@legitimate-company.com>
+Authentication-Results: mx.company.com;
+    spf=pass (sender IP matches SPF record) smtp.mailfrom=legitimate-company.com;
+    dkim=pass header.d=legitimate-company.com;
+    dmarc=pass (p=quarantine) header.from=legitimate-company.com
+DKIM-Signature: v=1; a=rsa-sha256; d=legitimate-company.com; s=selector1;
+Content-Type: text/plain; charset="utf-8"
+
+Hi there,
+
+Here are this week's product updates:
+
+1. New dashboard features launched
+2. Performance improvements across the platform
+3. Bug fixes for mobile users
+
+Learn more at https://www.legitimate-company.com/updates
+
+Best,
+The Product Team
